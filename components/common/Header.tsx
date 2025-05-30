@@ -19,8 +19,8 @@ export default function Header() {
           </Link>
         </div>
         <div className="space-x-4 text-white bg-gray-800 py-1.5 px-2 rounded">
-          <Link href="/sign-up">
-            Sign Up
+          <Link href="/sign-in">
+            Sign in
           </Link>
         </div>
       </nav>
