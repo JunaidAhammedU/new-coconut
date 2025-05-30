@@ -7,7 +7,7 @@ export default function Header() {
         <Link href="/" className="text-xl font-bold">
           Coconut
         </Link>
-        <div className="space-x-4 text-black">
+        <div className="space-x-4 text-black text-sm">
           <Link href="/">
             Home
           </Link>
@@ -18,7 +18,7 @@ export default function Header() {
             Contact
           </Link>
         </div>
-        <div className="space-x-4 text-white bg-gray-800 py-1.5 px-2 rounded">
+        <div className="space-x-4 text-white bg-gray-800 py-1.5 px-4 rounded-lg text-sm">
           <Link href="/sign-in">
             Sign in
           </Link>
