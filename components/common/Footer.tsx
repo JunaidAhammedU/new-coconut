@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="bg-gray-800 text-white p-4 mt-auto">
+    <footer className="text-black p-4 mt-auto">
       <div className="container mx-auto text-center">
         &copy; 2025 Ping-me. All rights reserved.
       </div>
