@@ -3,14 +3,18 @@ import { SignUp } from "@clerk/nextjs";
 
 export default function SignUpPage() {
   return (
-    <SignUp
-      appearance={{
-        elements: {
-          rootBox: "mx-auto",
-          card: "bg-white shadow-xl rounded-xl",
-          headerSubtitle: "hidden",
-        },
-      }}
-    />
+    <div className="flex items-center justify-center min-h-screen">
+      <SignUp
+        afterSignUpUrl="/explore"
+        redirectUrl="/explore"
+        appearance={{
+          elements: {
+            rootBox: "mx-auto",
+            card: "bg-white shadow-xl rounded-xl",
+            headerSubtitle: "hidden",
+          },
+        }}
+      />
+    </div>
   );
 }
