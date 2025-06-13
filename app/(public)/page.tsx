@@ -1,10 +1,11 @@
 import { BsStars } from "react-icons/bs";
 import { IoFastFoodOutline } from "react-icons/io5";
-import { MdOutlineEmojiFoodBeverage, MdOutlineFoodBank } from "react-icons/md";
+import { MdOutlineEmojiFoodBeverage } from "react-icons/md";
 import { PiBowlFood } from "react-icons/pi";
 import { SiFoodpanda } from "react-icons/si";
 import { BiFoodMenu } from "react-icons/bi";
-import { GiCook, GiNoodles, GiChopsticks, GiFruitBowl } from "react-icons/gi";
+import { GiCook, GiNoodles } from "react-icons/gi";
+import Link from "next/link";
 import { TbSalad } from "react-icons/tb";
 
 export default function LandingPage() {
@@ -36,9 +37,11 @@ export default function LandingPage() {
       </div>
       <div className="animate-fade-in-up relative z-10">
         <div className="flex justify-center space-x-6">
-          <button className="bg-gray-800 text-white py-3 px-8 rounded-lg text-sm hover:bg-gray-700 transition-all duration-300 hover:shadow-xl transform hover:-translate-y-0.5">
-            Explore Recipes
-          </button>
+          <Link href="/explore" className="flex items-center">
+            <button className="bg-gray-800 text-white py-3 px-8 rounded-lg text-sm hover:bg-gray-700 transition-all duration-300 hover:shadow-xl transform hover:-translate-y-0.5">
+              Explore Recipes
+            </button>
+          </Link>
           <button className="bg-white text-gray-800 py-3 px-8 rounded-lg text-sm flex items-center gap-2 hover:bg-gray-50 transition-all duration-300 shadow-md hover:shadow-xl transform hover:-translate-y-0.5">
             Generate with AI{" "}
             <BsStars className="animate-pulse hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-yellow-400 hover:to-orange-500" />
