@@ -11,7 +11,7 @@ import { TbSalad } from "react-icons/tb";
 export default function LandingPage() {
   return (
     <div className="container mx-auto p-4 flex flex-col items-center justify-center mt-16 relative overflow-hidden">
-      {/* Decorative floating icons */}
+
       <div className="absolute inset-0 pointer-events-none">
         <IoFastFoodOutline className="absolute top-10 left-10 text-4xl text-gray-300 animate-float" />
         <MdOutlineEmojiFoodBeverage className="absolute top-20 right-20 text-4xl text-gray-300 animate-float-delayed" />
