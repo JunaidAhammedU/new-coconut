@@ -8,6 +8,7 @@ import { GiCook, GiNoodles } from "react-icons/gi";
 import Link from "next/link";
 import { TbSalad } from "react-icons/tb";
 
+// Landing page
 export default function LandingPage() {
   return (
     <div className="container mx-auto p-4 flex flex-col items-center justify-center mt-16 relative overflow-hidden">
