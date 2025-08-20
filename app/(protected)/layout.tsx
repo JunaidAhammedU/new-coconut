@@ -1,3 +1,5 @@
+import Footer from "@/components/common/Footer";
+import Header from "@/components/common/Header";
 import {
     ClerkProvider,
     SignedIn,
@@ -11,13 +13,17 @@ export default function ProtectedLayout({
     children: React.ReactNode;
 }) {
     return (
-        <ClerkProvider>
-            <SignedIn>
-                {children}
-            </SignedIn>
-            <SignedOut>
-                <RedirectToSignIn />
-            </SignedOut>
-        </ClerkProvider>
+        <div className="flex flex-col min-h-screen">
+            <ClerkProvider>
+                <SignedIn>
+                    <Header />
+                    <main className="flex-1">{children}</main>
+                    <Footer />
+                </SignedIn>
+                <SignedOut>
+                    <RedirectToSignIn />
+                </SignedOut>
+            </ClerkProvider>
+        </div>
     );
 }

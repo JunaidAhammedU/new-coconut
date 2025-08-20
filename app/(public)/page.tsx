@@ -36,6 +36,7 @@ export default function LandingPage() {
           Community of Food Enthusiasts
         </p>
       </div>
+
       <div className="animate-fade-in-up relative z-10">
         <div className="flex justify-center space-x-6">
           <Link href="/explore" className="flex items-center">
