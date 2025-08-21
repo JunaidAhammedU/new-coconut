@@ -1,8 +1,19 @@
 import React from 'react'
+import ExploreFoodCard from '../_components/exploreFoodCard'
+import { foorCardData } from '../../../components/constants'
 
 const Explore = () => {
     return (
-        <div>Welcome to explore the recipes</div>
+        <div>
+            <div className='w-full h-[300px] bg-red-600 p-3'>
+                <h1 className="text-xl font-bold mb-4">What's On Your Mind</h1>
+                <div className="grid lg:grid-cols-5 gap-3">
+                    {foorCardData.map((item, index) => (
+                        <ExploreFoodCard key={index} title={item.title} url={item.url} />
+                    ))}
+                </div>
+            </div>
+        </div>
     )
 }
 
