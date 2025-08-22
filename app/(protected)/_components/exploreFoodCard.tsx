@@ -13,8 +13,8 @@ const ExploreFoodCard = ({ title, url }: ExploreFoodCardProps) => {
             <Image
                 src={url}
                 alt="Food Image"
-                width={50}
-                height={50}
+                width={100}
+                height={100}
                 className="rounded-lg shadow-md"
             />
             <h2 className="text-xs font-semibold mt-2">{title}</h2>
