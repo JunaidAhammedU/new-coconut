@@ -15,7 +15,7 @@ export const ExploreFoodCard: React.FC<ExploreFoodCardProps> = ({ title, url }) 
                 scale: 1.1,
                 transition: { duration: 0.3 }
             }}
-            className='flex flex-col justify-center items-center p-2'>
+            className='flex flex-col justify-center items-center p-2 cursor-pointer'>
             <Image
                 src={url}
                 alt="Food Image"
