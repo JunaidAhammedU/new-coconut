@@ -1,3 +1,5 @@
+'use client';
+import { motion } from 'framer-motion';
 import Image from 'next/image'
 import React from 'react'
 
@@ -6,10 +8,14 @@ interface ExploreFoodCardProps {
     url: string;
 }
 
-const ExploreFoodCard = ({ title, url }: ExploreFoodCardProps) => {
-
+export const ExploreFoodCard: React.FC<ExploreFoodCardProps> = ({ title, url }) => {
     return (
-        <div>
+        <motion.div
+            whileHover={{
+                scale: 1.1,
+                transition: { duration: 0.3 }
+            }}
+            className='flex flex-col justify-center items-center p-2 cursor-pointer'>
             <Image
                 src={url}
                 alt="Food Image"
@@ -18,8 +24,6 @@ const ExploreFoodCard = ({ title, url }: ExploreFoodCardProps) => {
                 className="rounded-lg shadow-md"
             />
             <h2 className="text-xs font-semibold mt-2">{title}</h2>
-        </div>
+        </motion.div>
     )
 }
-
-export default ExploreFoodCard
