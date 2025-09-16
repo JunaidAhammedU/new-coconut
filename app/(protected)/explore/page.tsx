@@ -10,7 +10,7 @@ const Explore = () => {
                 <div className="max-w-7xl mx-auto">
                     <div className="text-center space-y-4">
                         <div className="inline-flex items-center px-4 py-2 bg-gray-50 text-black rounded-full text-sm font-medium border border-gray-200">
-                            ✨ Discover Amazing Cuisines
+                            ✨ Discover Amazing Cuisines 🍗
                         </div>
                         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
                             Explore World-Class
@@ -48,6 +48,8 @@ const Explore = () => {
                     </div>
                 </div>
             </section>
+
+            {/* Recent Recipes Sections */}
 
             <section className="px-4 pb-12">
                 <div className="max-w-7xl mx-auto">
