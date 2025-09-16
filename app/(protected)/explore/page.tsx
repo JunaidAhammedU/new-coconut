@@ -69,12 +69,19 @@ const Explore = () => {
                     </div>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-6">
-                        {foodCardData.map((item) => (
-                            <RecepieCardCard
-                                key={item.id}
-                                {...item}
-                            />
-                        ))}
+                        {
+                            foodCardData.length > 0 ?
+                                (
+                                    foodCardData.map((item) => (
+                                        <RecepieCardCard
+                                            key={item.id}
+                                            {...item}
+                                        />
+                                    ))
+                                ) : (
+                                    <p className="text-center text-gray-500 col-span-full">No recipes found.</p>
+                                )
+                        }
                     </div>
                 </div>
             </section>

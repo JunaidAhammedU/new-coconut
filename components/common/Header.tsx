@@ -15,7 +15,7 @@ export default function Header() {
           Coconut
         </Link>
         <div className="space-x-6 text-black text-sm">
-          <Link href="/" className="hover:text-gray-600 transition-colors">
+          {/* <Link href="/" className="hover:text-gray-600 transition-colors">
             Home
           </Link>
           <Link href="/about" className="hover:text-gray-600 transition-colors">
@@ -23,7 +23,7 @@ export default function Header() {
           </Link>
           <Link href="/contact" className="hover:text-gray-600 transition-colors">
             Contact
-          </Link>
+          </Link> */}
         </div>
         <div>
           {user ? (
